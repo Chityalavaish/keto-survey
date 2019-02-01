@@ -37,29 +37,43 @@
     </div>
         <hr>
         <form id="survey-form">
-            <p id="name">Name: <input id="name-label" type="text" required placeholder="name"></p>
-            <p id="email">Email: <input id="email-label" type="text" required placeholder="email address"></p>
-            <p id="number">Mobile: <input id="number-label" type="text" required placeholder="mobile"></p>
-            <select>
+           <p><label id="name-label" >Name: <input id="name" type="text" required placeholder="name"></label>
+            </p> 
+            <p><label id="email-label" >Email: <input id="email" type="email" required placeholder="email address"></label>
+            </p>
+            <p><label id="number-label" >Mobile: <input id="number" type="number" min="0" max="9999999999" required placeholder="mobile"></label>
+            </p>
+            <select id="dropdown">
                 <option value="Vegetarian">Vegetarian</option>
                 <option value="Non-vegetarian">Non-vegetarian</option>
                 <option value="eggitarian">eggitarian</option>
             </select>
-        </br>
-    </br>
+        <br>
+    <br>
+    <label>
+            <input type="checkbox" name="cuisine" value="Mexican"> Mexican</label>
+        <label>
+            <input type="checkbox" name="cuisine" value="Indian"> Indian</label>
+        <label>
+            <input type="checkbox" name="cuisine" value="Italian"> Italian</label>
+            <label>
+                    <input type="checkbox" name="cuisine" value="Chinese"> Chinese</label>
+                    <label>
+                            <input type="checkbox" name="cuisine" value="American"> American</label>
+                    <br>
     <div id="label">
             <label>
-                <input type="checkbox" name="gender"> Male</label>
+                <input type="radio" name="gender" value="Male"> Male</label>
             <label>
-                <input type="checkbox" name="gender"> Female</label>
+                <input type="radio" name="gender" value="Female"> Female</label>
             <label>
-                <input type="checkbox" name="gender"> Others</label>
+                <input type="radio" name="gender" value="others"> Others</label>
             </div>
-            </br>
-        </br>
+            <br>
+        <br>
            <div id="textarea"> <textarea rows="4" cols="40" placeholder="comment here"></textarea>
            </div>
-           <button type="submit">submit</button>
+           <button id="submit" type="submit">submit</button>
         </form>
     </div>
 </div>
